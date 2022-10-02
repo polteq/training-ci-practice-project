@@ -1,7 +1,7 @@
 node {
    def mvnHome
    stage('Preparation') {
-      git 'git@gitlab.com:polteq-sandbox/ci-practice-project.git'
+      git 'https://gitlab.com/polteq-sandbox/ci-practice-project.git'
       mvnHome = tool 'M3'
    }
    stage('Build') {
